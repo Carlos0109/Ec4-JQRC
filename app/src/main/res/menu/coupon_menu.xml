@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/couponListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_coupon"
+        android:title="Cupones"/>
+    <item
+        android:id="@id/couponFavoriteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos"/>
+    <item
+        android:id="@id/digimonListBDFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_data"
+        android:title="Nuevos"/>
+    <item
+        android:id="@id/infoFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="Info"/>
+</menu>
