@@ -83,8 +83,8 @@ class AddDigimonActivity : AppCompatActivity() {
             }.addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val downloadUri = task.result
-                    binding.ivphoto.setImageURI(imageUri) // Mostrar la imagen en ImageView
-                    saveCouponToFirestore(downloadUri.toString()) // Guardar la URL en Firestore
+                    binding.ivphoto.setImageURI(imageUri)
+                    saveCouponToFirestore(downloadUri.toString())
                 } else {
                     // Manejar el error de obtener la URL
                     Toast.makeText(this, "Error al obtener la URL de la imagen", Toast.LENGTH_SHORT).show()
@@ -105,10 +105,10 @@ class AddDigimonActivity : AppCompatActivity() {
             firestore.collection("digimon")
                 .add(coupon)
                 .addOnSuccessListener {
-                    Toast.makeText(this, "Agregar correctamente el id: ${it.id}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"Agregado correctamente con id:${it.id}", Toast.LENGTH_SHORT).show()
                 }
-                .addOnFailureListener {
-                    Toast.makeText(this, "No se agrego el elemno", Toast.LENGTH_SHORT).show()
+                .addOnFailureListener{
+                    Toast.makeText(this,"Agrego el elemento", Toast.LENGTH_SHORT).show()
                 }
         }
     }

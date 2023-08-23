@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_coupon_level"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/btn_register_coupon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,15 +58,15 @@
         android:text="Registrar Digimon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_tomar_foto"
-        app:layout_constraintTop_toBottomOf="@+id/ivphoto" />
+        app:layout_constraintTop_toBottomOf="@+id/ivphoto" />-->
 
     <Button
         android:id="@+id/btn_tomar_foto"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:text="Elegir Foto"
-        app:layout_constraintEnd_toStartOf="@+id/btn_register_coupon"
+        android:text="Elegir Imagen y Registrar"
+        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivphoto" />
 
